@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import psycopg2
 
 dbname = "news"
@@ -58,11 +60,10 @@ WITH tb1 as (
     WHERE status != '200 OK'
     GROUP BY 1
      )
-SELECT tb1.day, tb2.count, tb1.count, ((tb2.count * 1./ tb1.count) * 100) as percentage
+SELECT tb1.day , ((tb2.count * 1./ tb1.count) * 100) as percentage
 FROM tb1,tb2
 WHERE tb1.day = tb2.day
-GROUP BY 1, 2, 3
-HAVING ((tb2.count * 1./ tb1.count) * 100) > 1
+AND ((tb2.count * 1./ tb1.count) * 100) > 1
 ORDER BY 2 DESC
 '''
 
@@ -70,7 +71,7 @@ c.execute(query)
 result = [list(item) for item in c.fetchall()]
 
 for item in result:
-    print("{} - {:.2f}% errors".format(item[0].strftime('%B %d, %Y'), item[3]))
+    print("{} - {:.2f}% errors".format(item[0].strftime('%B %d, %Y'), item[1]))
 
 
 db.close()
