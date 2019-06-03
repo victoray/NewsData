@@ -8,10 +8,11 @@ Logs Analysis
 Using Python and SQL to create an internal reporting tool to analyze user activities on the newspaper website and create an informative summary of user activity.
 
 # Files Used
-newsdata.sql
+[newsdata.sql](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 
 # Requirements
-Python >= 3.6  
+Python >= 3.6
+Postgre v11
 [psycopg2 v2.52](https://github.com/psycopg/psycopg2)
 
 # Run
