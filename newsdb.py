@@ -10,12 +10,12 @@ c = db.cursor()
 
 print("What are the most popular three articles of all time?\n")
 query = '''
-SELECT a.title, COUNT(*) 
-FROM authors 
-JOIN articles a ON authors.id = a.author 
-JOIN log ON log.path = ('/article/' || a.slug) 
-GROUP BY 1 
-ORDER BY 2 
+SELECT a.title, COUNT(*)
+FROM authors
+JOIN articles a ON authors.id = a.author
+JOIN log ON log.path = ('/article/' || a.slug)
+GROUP BY 1
+ORDER BY 2
 DESC LIMIT 3
 '''
 c.execute(query)
@@ -27,11 +27,11 @@ for item in result:
 print("-" * 60)
 
 query = '''
-SELECT authors.name, COUNT(*) 
-FROM authors 
-JOIN articles a ON authors.id = a.author 
-JOIN log ON log.path = ('/article/' || a.slug) 
-GROUP BY 1 
+SELECT authors.name, COUNT(*)
+FROM authors
+JOIN articles a ON authors.id = a.author
+JOIN log ON log.path = ('/article/' || a.slug)
+GROUP BY 1
 ORDER BY 2 DESC
 '''
 
