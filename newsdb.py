@@ -49,7 +49,6 @@ query = '''
 WITH tb1 as (
     SELECT DATE_TRUNC('day', time) as day, COUNT(*)
     FROM log
-    WHERE path != '/'
     GROUP BY 1
      ),
 
@@ -71,7 +70,7 @@ c.execute(query)
 result = [list(item) for item in c.fetchall()]
 
 for item in result:
-    print("{} - {:.2f}% errors".format(item[0].strftime('%B %d, %Y'), float(item[3])))
+    print("{} - {:.2f}% errors".format(item[0].strftime('%B %d, %Y'), item[3]))
 
 
 db.close()
