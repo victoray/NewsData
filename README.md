@@ -17,5 +17,6 @@ Postgre v11
 
 # Run
 ```
+  $ psql -d news -f newsdata.sql
   $ python newsdb.py
  ```
