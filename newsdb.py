@@ -1,6 +1,4 @@
 import psycopg2
-import time
-import datetime
 
 dbname = "news"
 
@@ -9,8 +7,14 @@ db = psycopg2.connect(database=dbname)
 c = db.cursor()
 
 print("What are the most popular three articles of all time?\n")
-c.execute(
-    "SELECT a.title, COUNT(*) FROM authors JOIN articles a ON authors.id = a.author JOIN log ON log.path = ('/article/' || a.slug) GROUP BY 1 ORDER BY 2 DESC LIMIT 3")
+query = '''
+SELECT a.title, COUNT(*) 
+FROM authors 
+JOIN articles a ON authors.id = a.author 
+JOIN log ON log.path = ('/article/' || a.slug) 
+GROUP BY 1 ORDER BY 2 DESC LIMIT 3
+'''
+c.execute(query)
 
 result = [list(item) for item in c.fetchall()]
 for item in result:
@@ -18,8 +22,16 @@ for item in result:
 
 print("-" * 60)
 
-c.execute(
-    "SELECT authors.name, COUNT(*) FROM authors JOIN articles a ON authors.id = a.author JOIN log ON log.path = ('/article/' || a.slug) GROUP BY 1 ORDER BY 2 DESC")
+query = '''
+SELECT authors.name, COUNT(*) 
+FROM authors 
+JOIN articles a ON authors.id = a.author 
+JOIN log ON log.path = ('/article/' || a.slug) 
+GROUP BY 1 
+ORDER BY 2 DESC
+'''
+
+c.execute(query)
 
 
 print("\nWho are the most popular article authors of all time?\n")
