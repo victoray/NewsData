@@ -54,10 +54,10 @@ WITH tb1 as (
      ),
 
      tb2 as (
-         SELECT DATE_TRUNC('day', time) as day, COUNT(*)
-         FROM log
-         WHERE status != '200 OK'
-         GROUP BY 1
+    SELECT DATE_TRUNC('day', time) as day, COUNT(*)
+    FROM log
+    WHERE status != '200 OK'
+    GROUP BY 1
      )
 SELECT tb1.day, tb2.count, tb1.count, ((tb2.count * 1./ tb1.count) * 100) as percentage
 FROM tb1,tb2
