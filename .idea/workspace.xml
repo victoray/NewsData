@@ -6,8 +6,6 @@
       <change afterPath="$PROJECT_DIR$/../forum/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../forum/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../forum/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsdb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../forum/forum.py" beforeDir="false" afterPath="$PROJECT_DIR$/../forum/forum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../forum/forumdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/../forum/forumdb.py" afterDir="false" />
     </list>
@@ -81,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newsdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="1035">
+              <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -215,7 +213,7 @@
       <workItem from="1559562618228" duration="1340000" />
       <workItem from="1559564052038" duration="181000" />
       <workItem from="1559564366053" duration="234000" />
-      <workItem from="1559565212012" duration="10031000" />
+      <workItem from="1559565212012" duration="10203000" />
     </task>
     <task id="LOCAL-00001" summary="format sql queries">
       <created>1559576150430</created>
@@ -252,23 +250,29 @@
       <option name="project" value="LOCAL" />
       <updated>1559577091421</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="clear whitespaces">
+      <created>1559577389140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559577389140</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11786000" />
+    <option name="totallyTimeSpent" value="11958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.32944608" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49940476" weight="0.32944608" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49940476" visible="true" weight="0.32944608" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -277,7 +281,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005952" side_tool="true" weight="0.32944608" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3022352" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3022352" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -293,10 +297,11 @@
     <MESSAGE value="format sql queries" />
     <MESSAGE value="fix sql error" />
     <MESSAGE value="add shebang line" />
-    <option name="LAST_COMMIT_MESSAGE" value="add shebang line" />
+    <MESSAGE value="clear whitespaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear whitespaces" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NewsData$newsdb.coverage" NAME="newsdb Coverage Results" MODIFIED="1559577039244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NewsData$newsdb.coverage" NAME="newsdb Coverage Results" MODIFIED="1559577850283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -317,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newsdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="1035">
+          <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
         </state>
       </provider>
     </entry>
